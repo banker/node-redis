@@ -109,7 +109,7 @@ const [setKeyReply, otherKeyValue] = await client
   .exec(); // ['OK', 'another-value']
 ```
 
-You can also [watch](https://redis.io/topics/transactions#optimistic-locking-using-check-and-set) keys by calling `.watch()`. Your transaction will abort if any of the watched keys change.
+You can also [watch](https://redis.io/topics/transactions#optimistic-locking-using-check-and-set) keys by calling `.watch()`. Your transaction will abort if any of the watched keys changes.
 
 To dig deeper into transactions, check out the [Isolated Execution Guide](./docs/isolated-execution.md).
 
